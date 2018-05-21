@@ -1,95 +1,35 @@
-English | [简体中文](./README.zh-CN.md)
+# lefit-cms
 
-# Ant Design Pro
 
-[![](https://img.shields.io/travis/ant-design/ant-design-pro/master.svg?style=flat-square)](https://travis-ci.org/ant-design/ant-design-pro) [![Build status](https://ci.appveyor.com/api/projects/status/67fxu2by3ibvqtat/branch/master?svg=true)](https://ci.appveyor.com/project/afc163/ant-design-pro/branch/master)  [![Gitter](https://badges.gitter.im/ant-design/ant-design-pro.svg)](https://gitter.im/ant-design/ant-design-pro?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+基于ant design pro的开箱即用的乐刻中台前端解决方案。
 
-An out-of-box UI solution for enterprise applications as a React boilerplate.
+ant design pro相关
+- 预览：http://preview.pro.ant.design
+- 首页：http://pro.ant.design/index-cn
+- 使用文档：http://pro.ant.design/docs/getting-started-cn
+- 更新日志: http://pro.ant.design/docs/changelog-cn
+- 常见问题：http://pro.ant.design/docs/faq-cn
+- 国内镜像：http://ant-design-pro.gitee.io
 
-![](https://gw.alipayobjects.com/zos/rmsportal/xEdBqwSzvoSapmnSnYjU.png)
 
-- Preview: http://preview.pro.ant.design
-- Home Page: http://pro.ant.design
-- Documentation: http://pro.ant.design/docs/getting-started
-- ChangeLog: http://pro.ant.design/docs/changelog
-- FAQ: http://pro.ant.design/docs/faq
-- Mirror Site in China: http://ant-design-pro.gitee.io
-
-## Translation Recruitment :loudspeaker:
-
-We need your help: https://github.com/ant-design/ant-design-pro/issues/120
-
-## Features
-
-- :gem: **Neat Design**: Follow [Ant Design specification](http://ant.design/)
-- :triangular_ruler: **Common Templates**: Typical templates for enterprise applications
-- :rocket: **State of The Art Development**: Newest development stack of React/dva/antd
-- :iphone: **Responsive**: Designed for varies of screen size
-- :art: **Theming**: Customizable theme with simple config
-- :globe_with_meridians: **International**: Built-in i18n solution
-- :gear: **Best Practice**: Solid workflow make your code health
-- :1234: **Mock development**: Easy to use mock development solution
-- :white_check_mark: **UI Test**: Fly safely with unit test and e2e test
-
-## Templates
-
-```
-- Dashboard
-  - Analytic
-  - Monitor
-  - Workspace
-- Form
-  - Basic Form
-  - Step Form
-  - Advanced From
-- List
-  - Standard Table
-  - Standard List
-  - Card List
-  - Search List (Project/Applications/Article)
-- Profile
-  - Simple Profile
-  - Advanced Profile
-- Result
-  - Success
-  - Failed
-- Exception
-  - 403
-  - 404
-  - 500
-- User
-  - Login
-  - Register
-  - Register Result
-```
-
-## Usage
+## 使用
 
 ```bash
-$ git clone https://github.com/ant-design/ant-design-pro.git --depth=1
+$ git clone https://github.com/youyuxun/lefit-cms.git --depth=1
 $ cd ant-design-pro
 $ npm install
-$ npm start         # visit http://localhost:8000
+$ npm start         # 访问 http://localhost:8000
 ```
 
-Or you can use the command tool: [ant-design-pro-cli](https://github.com/ant-design/ant-design-pro-cli)
+也可以使用集成化的 [lefit-cms-cli](https://github.com/youyuxun/lefit-cms-cli) 工具。
 
 ```bash
-$ npm install ant-design-pro-cli -g
+$ npm install lefit-cms-cli -g
 $ mkdir pro-demo && cd pro-demo
 $ pro new
 ```
 
-More instruction at [documentation](http://pro.ant.design/docs/getting-started).
+## 兼容性
 
-## Compatibility
+现代浏览器及 IE11。
 
-Modern browsers and IE11.
-
-## Contributing
-
-Any Contribution of following ways will be welcome:
-
-- Use Ant Design Pro in your daily work.
-- Submit [issue](http://github.com/ant-design/ant-design-pro/issues) to report bug or ask questions.
-- Propose [pull request](http://github.com/ant-design/ant-design-pro/pulls) to improve our code.

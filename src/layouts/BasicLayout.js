@@ -4,7 +4,6 @@ import { Layout, Icon, message } from 'antd'
 import DocumentTitle from 'react-document-title'
 import { connect } from 'dva'
 import { Route, Redirect, Switch, routerRedux } from 'dva/router'
-import queryString from 'query-string'
 import { ContainerQuery } from 'react-container-query'
 import classNames from 'classnames'
 import { enquireScreen } from 'enquire-js'
@@ -171,7 +170,6 @@ class BasicLayout extends React.PureComponent {
       location,
       menuData,
     } = this.props
-    location.query = queryString.parse(location.search)
     const bashRedirect = this.getBashRedirect()
     const layout = (
       <Layout>
@@ -221,26 +219,6 @@ class BasicLayout extends React.PureComponent {
           </Content>
           <Footer style={{ padding: 0 }}>
             <GlobalFooter
-              // links={[
-              //   {
-              //     key: 'Pro 首页',
-              //     title: 'Pro 首页',
-              //     href: 'http://pro.ant.design',
-              //     blankTarget: true,
-              //   },
-              //   {
-              //     key: 'github',
-              //     title: <Icon type="github" />,
-              //     href: 'https://github.com/ant-design/ant-design-pro',
-              //     blankTarget: true,
-              //   },
-              //   {
-              //     key: 'Ant Design',
-              //     title: 'Ant Design',
-              //     href: 'http://ant.design',
-              //     blankTarget: true,
-              //   },
-              // ]}
               copyright={
                 <Fragment>
                   Copyright <Icon type="copyright" /> 2018 乐刻运动

@@ -6,7 +6,7 @@ class Analysis extends Component {
     return (
       <Fragment>
         <Card  bordered={false}>
-          乐刻电商小程序后台
+          乐刻后台
         </Card>
       </Fragment>
     )

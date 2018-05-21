@@ -1,0 +1,68 @@
+.container {
+  //display: flex;
+  .item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    float: left;
+    .imgWrap {
+      width: 104px;
+      height: 104px;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #e5e5e5;
+      position: relative;
+      .img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+      }
+      .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 104px;
+        height: 104px;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 3px;
+        transition: background .5s;
+        &:hover {
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .iconGroup {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 0.5s;
+          .icon {
+            position: absolute;
+            left: 62%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            color: #fff;
+            &:first-child {
+              left: 38%;
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          &:hover {
+            opacity: 0.9
+          }
+        }
+      }
+    }
+    .input {
+      width: 120px;
+    }
+    .title {
+      text-align: center;
+      height: 32px;
+      width: 100%;
+    }
+  }
+}
+

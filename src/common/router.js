@@ -84,6 +84,9 @@ export const getRouterData = app => {
     '/exception/500': {
       component: dynamicWrapper(app, [], () => import('../routes/Exception/500')),
     },
+    '/filterDemo': {
+      component: dynamicWrapper(app, [], () => import('../routes/FilterDemo/index')),
+    },
   };
   // Get name from ./menu.js or just set it in the router data.
   const menuData = getFlatMenuData(getMenuData());

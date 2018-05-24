@@ -1,7 +1,8 @@
 import React from 'react'
 import Filter from '../../components/Filter/index'
+import { Button, Col } from 'antd'
 
-const  Demo = () => {
+const Demo = () => {
   const schema = [
     {
       label: 'item1',
@@ -47,7 +48,18 @@ const  Demo = () => {
       console.log(values)
     }
   }
-  return <Filter {...props} />
+  const jump = () => {
+    console.log('aa')
+  }
+  return (
+    <Filter {...props}>
+      <Col md={8} sm={24}>
+        <Button type="primary" onClick={jump}>
+          新增
+        </Button>
+      </Col>
+    </Filter>
+  )
 }
 
 export default Demo

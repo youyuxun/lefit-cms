@@ -9,6 +9,10 @@ const { RangePicker } = DatePicker
 
 @Form.create()
 class Filter extends Component {
+  constructor(props) {
+    super(props)
+    console.log(props)
+  }
   handleSearch = (e) => {
     e.preventDefault()
     const { onSearch, form: { getFieldsValue } } = this.props
@@ -90,7 +94,7 @@ class Filter extends Component {
     }
   }
   render () {
-    const { schema = [] } = this.props
+    const { schema = [], children } = this.props
 
     return (
       <Card bordered={false} className={styles.tableListForm}>
@@ -109,6 +113,9 @@ class Filter extends Component {
                 重置
               </Button>
             </Col>
+            {
+              children
+            }
           </Row>
         </Form>
       </Card>
